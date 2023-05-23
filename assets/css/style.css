@@ -61,11 +61,15 @@ a:hover {
 
 .header .logo {
   line-height: 0;
+  
 }
 
 .header .logo img {
   max-height: 40px;
   margin-right: 6px;
+  background: #fff;
+  width: 100%;
+  border-radius: 10px;
 }
 
 .header .logo span {
@@ -200,12 +204,6 @@ a:hover {
   .navbar .dropdown .dropdown:hover>ul {
     left: -100%;
   }
-}
-
-.logo img {
-  background: #fff;
-  width: 100%;
-  border-radius: 10px;
 }
 
 /* Hero Section */
@@ -742,6 +740,9 @@ a:hover {
 .footer .footer-top .footer-info .logo img {
   max-height: 40px;
   margin-right: 6px;
+  background: #fff;
+  border-radius: 10px;
+  margin-right: 5px;
 }
 .footer .footer-top .footer-info .logo span {
   font-size: 30px;
