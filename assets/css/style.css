@@ -825,3 +825,23 @@ a:hover {
   font-size: 13px;
   color: #172873;
 }
+
+
+.navbar .profil,
+.navbar .profil:focus {
+  background: #fff;
+  width: 50px;
+  margin-left: 30px;
+  border-radius: 4px;
+  color: #2F53EB;
+}
+
+.navbar .profil {
+  padding: 2px;
+  border-radius: 100%;
+}
+
+.navbar .profil img {
+  border-radius: 100%;
+  width: 100%;
+}
