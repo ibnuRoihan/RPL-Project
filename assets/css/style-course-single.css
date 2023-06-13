@@ -1,0 +1,442 @@
+/* Header */
+/*landing page */
+.header {
+    transition: all 0.5s;
+    z-index: 997;
+}
+
+.header.header-scrolled {
+    background: #172873;
+    box-shadow: 0px 2px 20px rgb(255, 255, 255, 0.2);
+}
+
+.header .logo {
+    line-height: 0;
+}
+
+.header .logo img {
+    max-height: 40px;
+    margin-right: 6px;
+}
+
+.header .logo span {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 3px;
+}
+
+
+/* Navbar */
+
+
+.navbar {
+    padding: 0;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar a,
+.navbar a:focus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 10px 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+.navbar a i,
+.navbar a:focus i {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 5px;
+}
+
+.navbar a:hover,
+.navbar .active:focus,
+.navbar .active,
+.navbar li:hover>a {
+    color: #748CF1;
+    text-decoration: none;
+}
+
+.navbar .getstarted,
+.navbar .getstarted:focus {
+    background: #fff;
+    padding: 8px 20px;
+    margin-left: 30px;
+    border-radius: 4px;
+    color: #2F53EB;
+}
+
+.navbar .getstarted:hover,
+.navbar .getstarted:focus:hover {
+    color: #fff;
+    background: #748CF1;
+}
+
+.navbar .dropdown ul {
+    display: block;
+    position: absolute;
+    left: 14px;
+    top: calc(100% + 30px);
+    margin: 0;
+    padding: 10px 0;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    background: #2F53EB;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    transition: 0.3s;
+    border-radius: 4px;
+
+}
+
+.navbar .dropdown ul li {
+    min-width: 200px;
+}
+
+.navbar .dropdown ul a {
+    padding: 10px 20px;
+    font-size: 15px;
+    text-transform: none;
+    font-weight: 600;
+}
+
+.navbar .dropdown ul a i {
+    font-size: 12px;
+}
+
+.navbar .dropdown:hover>ul {
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
+}
+
+.navbar .dropdown .dropdown ul {
+    top: 0;
+    left: calc(100% - 30px);
+    visibility: hidden;
+}
+
+.navbar .dropdown .dropdown:hover>ul {
+    opacity: 1;
+    top: 0;
+    left: 100%;
+    visibility: visible;
+}
+
+@media (max-width: 1366px) {
+    .navbar .dropdown .dropdown ul {
+        left: -90%;
+    }
+
+    .navbar .dropdown .dropdown:hover>ul {
+        left: -100%;
+    }
+}
+
+.logo img {
+    background: #fff;
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+/* hero banner section */
+.gradient-bootcamp {
+    padding: 100px 0 170px;
+    position: relative;
+    overflow: hidden;
+}
+
+.gradient-bootcamp::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+
+    background-image: linear-gradient(rgba(23, 40, 115, 1), rgba(47, 83, 235, 0.9), rgba(47, 83, 235, 0));
+}
+
+.bootcamp-hero {
+    text-align: center;
+    padding-left: 50px;
+    padding-top: 60px;
+}
+
+.bootcamp-hero h1 {
+    font-weight: 700;
+    color: #fff;
+}
+
+.bootcamp-hero p {
+    color: #fff;
+}
+
+.bootcamp-list h2 {
+    margin-left: 30px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #172873;
+}
+
+.bootcamp-course {
+    text-align: left;
+    padding-left: 50px;
+    padding-bottom: 0;
+}
+
+.bootcamp-course h1 {
+    font-weight: 700;
+    color: #fff;
+}
+
+.bootcamp-course p {
+    color: #fff;
+}
+
+.course-description h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #172873;
+}
+
+
+
+.learn-path, .box-payment {
+    padding: 20px;
+    margin-left: 40px;
+    background: #fff;
+    border-radius: 4px;
+    border: 1px solid rgba(127, 137, 161, 0.2);
+    box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.08);
+}
+
+
+.learn-path .icon-learn i {
+
+    display: inline-flex;
+}
+
+.learn-path .icon-learn i>span {
+    font-size: 14px;
+    margin-left: 10px;
+    font-family: 'Poppins', sans-serif;
+    color: #172873;
+}
+
+.course-content {
+    padding: 20px;
+    margin: 20px;
+}
+
+.box-course {
+    display: inline-flex;
+    margin-bottom: 10px;
+    background: #fff;
+    border: 1px solid rgba(127, 137, 161, 0.3);
+    box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.course-content .box-content .box-course h3 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 400px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #172873;
+}
+
+.box-course a {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 12px;
+    background: #172873;
+    color: #fff;
+}
+
+.box-course a:hover {
+    text-decoration: none;
+    background: #2F53EB;
+    color: #fff;
+}
+
+.description {
+    padding: 40px;
+    text-align: justify;
+}
+
+.icon-container {
+    display: inline-flex;
+    align-items: center;
+    color: #172873;
+}
+
+.box-payment .btn-payment {
+    display: block;
+  position: relative;
+  bottom: 3%;
+  font-size: 12px;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 0;
+  padding: 5px;
+  width: 100%;
+  color: #fff;
+  background: #172873;
+  
+  transition: background 0.4s ease;
+}
+
+.box-payment .btn-payment:hover {
+    background: #2F53EB;
+    color: #fff;
+    text-decoration: none;
+}
+
+.box-payment img {
+    width: 100%;
+}
+
+/* Footer */
+.footer {
+    background: #f6f9ff;
+    padding-top: 100px;
+    font-size: 14px;
+  }
+  .footer .footer-top {
+    background: #172873;
+    background-size: contain;
+    border-top: 1px solid #e1ecff;
+    border-bottom: 1px solid #e1ecff;
+    padding: 60px 0 30px 0;
+  }
+  @media (max-width: 992px) {
+    .footer .footer-top {
+      background-position: center bottom;
+    }
+  }
+  .footer .footer-top .footer-info {
+    margin-bottom: 30px;
+  }
+  .footer .footer-top .footer-info .logo-footer {
+    line-height: 0;
+    margin-bottom: 15px;
+  }
+  .footer .footer-top .footer-info .logo-footer img {
+    max-height: 50px;
+    max-width: 50px;
+    background: #fff;
+    border-radius: 10px;
+    margin-right: 5px;
+    
+  }
+  .footer .footer-top .footer-info .logo-footer span {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #fff;
+    font-family: "Nunito", sans-serif;
+    margin-top: 3px;
+  }
+  .footer .footer-top .footer-info p {
+    font-size: 14px;
+    color: #FFF;
+    line-height: 24px;
+  
+    margin-bottom: 0;
+    font-family: "Nunito", sans-serif;
+  }
+  .footer .footer-top .social-links a {
+    font-size: 20px;
+    display: inline-block;
+    color: #FFF;
+    line-height: 0;
+    margin-right: 10px;
+    transition: 0.3s;
+  }
+  .footer .footer-top .social-links a:hover {
+    color: #748CF1;
+  }
+  .footer .footer-top h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 12px;
+  }
+  .footer .footer-top .footer-links {
+    margin-bottom: 30px;
+  }
+  .footer .footer-top .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .footer .footer-top .footer-links ul i {
+    padding-right: 2px;
+    color: #d0d4fc;
+    font-size: 12px;
+    line-height: 0;
+  }
+  .footer .footer-top .footer-links ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+  .footer .footer-top .footer-links ul li:first-child {
+    padding-top: 0;
+  }
+  .footer .footer-top .footer-links ul a {
+    color: #fff;
+    transition: 0.3s;
+    display: inline-block;
+    line-height: 1;
+  }
+  .footer .footer-top .footer-links ul a:hover {
+    color: #748CF1;
+  }
+  .footer .footer-top .footer-contact p {
+    line-height: 26px;
+    color: #FFF;
+  }
+  .footer .copyright {
+    text-align: center;
+    padding-top: 30px;
+    color: #172873;
+  }
+  .footer .credits {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 13px;
+    color: #172873;
+  }
